@@ -26,3 +26,24 @@ const observer = new IntersectionObserver(entries => {
 
 images.forEach(img => observer.observe(img));
 
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".post.featured");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target
+          .querySelectorAll("h2, p")
+          .forEach((p, i) => {
+            p.style.transitionDelay = `${i * 0.3}s`; // stagger
+            p.classList.add("fade-in");
+          });
+
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  sections.forEach(section => observer.observe(section));
+});
+

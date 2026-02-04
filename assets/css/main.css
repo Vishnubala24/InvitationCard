@@ -4844,4 +4844,16 @@ input, select, textarea {
 		z-index: 1;
 	  }
 	  
+	  .post.featured h2,
+	  .post.featured p {
+		opacity: 0;
+		transform: translateY(10px);
+		transition: opacity 1s ease, transform 1s ease;
+	  }
+	  
+	  .post.featured h2.fade-in,
+	  .post.featured p.fade-in {
+		opacity: 1;
+		transform: translateY(0);
+	  }
 	  
