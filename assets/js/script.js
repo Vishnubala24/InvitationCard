@@ -47,3 +47,19 @@ document.addEventListener("DOMContentLoaded", () => {
   sections.forEach(section => observer.observe(section));
 });
 
+let lastScroll = 0;
+const intro = document.getElementById("intro");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll) {
+    // Scrolling down → hide
+    intro.classList.add("hidden");
+  } else {
+    // Scrolling up → show
+    intro.classList.remove("hidden");
+  }
+
+  lastScroll = currentScroll;
+});
