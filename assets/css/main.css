@@ -4781,19 +4781,19 @@ input, select, textarea {
 	  .fade-left.show {
 		opacity: 1;
 		transform: translateX(0);
-		transition: all 2s ease-in 1s;
+		transition: all 1s ease-in 1s;
 	  }
 	  
 	  .fade-right.show {
 		opacity: 1;
 		transform: translateX(0);
-		transition: all 1s ease-in 2s;
+		transition: all 1s ease-in 1s;
 	  }
 	  
 	  .fade-up.show {
 		opacity: 1;
 		transform: translateY(0);
-		transition: all 2s ease-in-out 3s;
+		transition: all 1s ease-in-out 2s;
 	  }
 	  
 	  /* Initial positions */
