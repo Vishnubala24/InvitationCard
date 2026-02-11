@@ -4787,13 +4787,13 @@ input, select, textarea {
 	  .fade-right.show {
 		opacity: 1;
 		transform: translateX(0);
-		transition: all 3s ease-in 2s;
+		transition: all 1s ease-in 2s;
 	  }
 	  
 	  .fade-up.show {
 		opacity: 1;
 		transform: translateY(0);
-		transition: all 4s ease-in-out 3s;
+		transition: all 2s ease-in-out 3s;
 	  }
 	  
 	  /* Initial positions */
